@@ -8,9 +8,8 @@ function setUpOctoTab() {
     document.removeEventListener('DOMNodeInserted', setUpOctoTab);
     document.removeEventListener('DOMContentLoaded', setUpOctoTab);
     document.querySelector('.news').classList.add('content-hidden', 'old-news');
-
+    
     app.preCur = app.cur = 'star-news';
-
     refactorTheNews();
     aggregateEvents();
     initObserver();
@@ -19,14 +18,14 @@ function setUpOctoTab() {
 
 function initObserver(option = { childList: true, subtree: true, }) {
   document.querySelector('.refined-ajax-pagination-btn').addEventListener('click', (ev) => {
-      ev.preventDefault();
-      if (document.querySelector('.old-news .ajax-pagination-btn')) {
-        document.querySelector('.refined-ajax-pagination-form').classList.toggle('loading');
-        document.querySelector('.old-news .ajax-pagination-btn').click();
-      } else {
-        document.querySelector('.refined-ajax-pagination-btn').innerHTML = 'No more...';
-      }
-    });
+    ev.preventDefault();
+    if (document.querySelector('.old-news .ajax-pagination-btn')) {
+      document.querySelector('.refined-ajax-pagination-form').classList.toggle('loading');
+      document.querySelector('.old-news .ajax-pagination-btn').click();
+    } else {
+      document.querySelector('.refined-ajax-pagination-btn').innerHTML = 'No more...';
+    }
+  });
 
   const mo = new MutationObserver((r) => {
     aggregateEvents();
