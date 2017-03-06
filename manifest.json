@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Octotab",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extension to make github news feed organized!",
   "minimum_chrome_version": "26",
   "icons": {

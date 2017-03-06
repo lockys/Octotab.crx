@@ -183,15 +183,13 @@ function refactorTheNews() {
         </button>
     </form>
     <div class="text-center">
+        <div class="mt-4">
+          <svg aria-hidden="true" class="octicon octicon-light-bulb text-gray" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg>
+          <strong>ProTip!</strong>
+          Edit your feed by updating the users you <a href="${document.querySelector('.text-center .mt-4 > a').href}">follow</a> and repositories you <a href="/watching">watch</a>.
+        </div>
 
-          <div class="mt-4">
-            <svg aria-hidden="true" class="octicon octicon-light-bulb text-gray" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg>
-            <strong>ProTip!</strong>
-            Edit your feed by updating the users you <a href="${document.querySelector('.text-center .mt-4 > a').href}">follow</a> and repositories you <a href="/watching">watch</a>.
-          </div>
-
-          <a class="link-gray-dark mt-3 d-inline-block" href="${document.querySelector('.text-center > a').href}" data-ga-click="Dashboard, click, News feed atom/RSS link - context:user"><svg aria-hidden="true" class="octicon octicon-rss mr-1" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"></path></svg>Subscribe to <strong>your</strong> news feed</a>
-
+        <a class="link-gray-dark mt-3 d-inline-block" href="${document.querySelector('.text-center > a').href}" data-ga-click="Dashboard, click, News feed atom/RSS link - context:user"><svg aria-hidden="true" class="octicon octicon-rss mr-1" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"></path></svg>Subscribe to <strong>your</strong> news feed</a>
     </div>
     `;
 
