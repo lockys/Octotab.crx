@@ -9,8 +9,8 @@ This is a tiny extension for you to categorize your news feed. Let me know if yo
 
 How to install
 ==
-Please download it from Google extension store.
-https://chrome.google.com/webstore/detail/llfamhakdognknlckipgfkmikollbeee
+Please download it from [Google extension store](https://chrome.google.com/webstore/detail/llfamhakdognknlckipgfkmikollbeee
+).
 
 Manually install
 ==
